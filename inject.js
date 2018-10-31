@@ -14,7 +14,7 @@
 <button style="position:absolute;top:0;right:0;padding:2px 5px 2px">X</button>\
 <a href="https://github.com/Grosserly/js-inject/" style="font-size:20px">JavaScript Injector</a>\
 <div></div>\
-<textarea rows="12" cols="40" style="margin:15px 0 15px"></textarea>\
+<textarea rows="12" cols="40" style="margin:15px 0 15px;font-family:monospace"></textarea>\
 <div></div>\
 <button>Inject</button>\
 </div>';
