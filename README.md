@@ -13,4 +13,4 @@ I know you can just do this with Inspect Element but Inspect Element's disabled 
 
 ---
 
-Thanks to Alex Leone, David Nufer, and David Truong, the people behind [Katamari Hack](http://kathack.com/), because I used their  code as a reference at times.
+Thanks to Alex Leone, David Nufer, and David Truong, the people behind [Katamari Hack](http://kathack.com/), for providing a reference for me at times.
