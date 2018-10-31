@@ -7,7 +7,7 @@
     var modal = document.createElement("dialog"); // New dialog box element added just this year
 	document.body.appendChild(modal);
     modal.showModal(); // Required to make modal visible
-    modal.style = "padding:40px 20px 20px;border:0;box-shadow:0 0 50px"; // Add style to modal
+    modal.style = "padding:20px;border:0;box-shadow:0 0 50px"; // Add style to modal
 
 	// Construct modal
 	modal.innerHTML = '<div>\
