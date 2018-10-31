@@ -1,6 +1,6 @@
 /**
  *  JavaScript Injector
- *  javascript:var%20d=document;var%20s=d.createElement('script');s.src='https://grosserly.github.io/js-inject/inject.js';d.body.appendChild(i);void(0);
+ *  javascript:var%20d=document;var%20s=d.createElement('script');s.src='https://grosserly.github.io/js-inject/inject.js';d.body.appendChild(s);void(0);
  */
 (function() {
 
