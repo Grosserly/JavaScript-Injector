@@ -4,51 +4,30 @@
  */
 (function() {
 
-    var modalWindow = document.createElement("dialog");
-    modalWindow.setAttribute("open", "true");
-    modalWindow.setAttribute("style", "position:absolute;padding:20px;border:0;box-shadow:0 0 50px;");
+    var modal = document.createElement("dialog"); // New dialog box element added just this year
+	document.body.appendChild(modal);
+    modal.showModal(); // Required to make modal visible
+    modal.style = "padding:40px 20px 20px;border:0;box-shadow:0 0 50px"; // Add style to modal
 
+	// Construct modal
+	modal.innerHTML = '<div>\
+<button style="position:absolute;top:0;right:0;padding:2px 5px 2px">X</button>\
+<a href="https://github.com/Grosserly/js-inject/" style="font-size:20px">JavaScript Injector</a>\
+<div></div>\
+<textarea rows="4" cols="50" style="margin:15px 0 15px"></textarea>\
+<div></div>\
+<button>Inject</button>\
+</div>';
 
-        var container = document.createElement("div");
-        
-            var closeButton = document.createElement("button");
-            closeButton.appendChild(document.createTextNode("X"));
-            closeButton.setAttribute("style", "position:absolute;top:0;right:0;padding:2px 5px 2px");
-            
-
-            var header = document.createElement("a");
-            header.appendChild(document.createTextNode("JavaScript Injector"));
-            header.setAttribute("style","font-size:16px");
-            header.setAttribute("href","https://github.com/Grosserly/js-inject/");
-
-
-            var inputBox = document.createElement("textarea");
-            inputBox.setAttribute("rows", "4");
-            inputBox.setAttribute("cols", "50");
-            inputBox.setAttribute("style", "margin:15px 0 15px");
-            
-            
-            var submitButton = document.createElement("button");
-            submitButton.appendChild(document.createTextNode("Inject"));
-            submitButton.setAttribute("style", "float:left");
-            
-            
-    // Append ALL the things!
-    container.appendChild(closeButton);
-    container.appendChild(header);
-    container.appendChild(inputBox);
-    container.appendChild(submitButton);
-    modalWindow.appendChild(container);
-    document.body.appendChild(modalWindow);
     
-    // Delete injector box from page when X button clicked
-    closeButton.addEventListener('click', function () {
-        modalWindow.parentNode.removeChild(modalWindow);
+    // Delete modal from page when X button clicked
+    modal.getElementsByTagName('button')[0].addEventListener('click', function() {
+        modal.parentNode.removeChild(modal);
     }, true);
     
     // Run the JavaScript in the box when Inject button clicked
-    submitButton.addEventListener('click', function () {
-        eval(inputBox.value);
+	modal.getElementsByTagName('button')[1].addEventListener('click', function() {
+        eval(modal.getElementsByTagName('textarea')[0].value);
     }, true);
 
 })();
