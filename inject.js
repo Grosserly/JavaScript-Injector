@@ -30,7 +30,7 @@
 		try {
 		    eval(modal.getElementsByTagName('textarea')[0].value);
 		} catch(err) {
-			alert(err.name + "\n:" + err.message);
+			alert(err);
 	}, true);
 
 })();
