@@ -27,7 +27,10 @@
     
 	// Run the JavaScript in the box when Inject button clicked
 	modal.getElementsByTagName('button')[1].addEventListener('click', function() {
-		eval(modal.getElementsByTagName('textarea')[0].value);
+		try {
+		    eval(modal.getElementsByTagName('textarea')[0].value);
+		} catch(err) {
+			alert(err.name + "\n:" + err.message);
 	}, true);
 
 })();
