@@ -5,12 +5,12 @@
 (function() {
 
     var modal = document.createElement("dialog"); // New dialog box element added just this year
-	document.body.appendChild(modal);
+    document.body.appendChild(modal);
     modal.showModal(); // Required to make modal visible
     modal.style = "padding:20px;border:0;box-shadow:0 0 50px"; // Add style to modal
 
-	// Construct modal
-	modal.innerHTML = '<div>\
+    // Construct modal
+    modal.innerHTML = '<div>\
 <button style="position:absolute;top:0;right:0;padding:2px 5px 2px">X</button>\
 <a href="https://github.com/Grosserly/js-inject/" style="font-size:20px">JavaScript Injector</a>\
 <div></div>\
@@ -26,7 +26,7 @@
     }, true);
     
     // Run the JavaScript in the box when Inject button clicked
-	modal.getElementsByTagName('button')[1].addEventListener('click', function() {
+    modal.getElementsByTagName('button')[1].addEventListener('click', function() {
         eval(modal.getElementsByTagName('textarea')[0].value);
     }, true);
 
