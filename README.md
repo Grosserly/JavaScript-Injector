@@ -1,5 +1,5 @@
 # JavaScript Injector
-A bookmark that spawns a little box that lets you run JS in any page
+A bookmarklet that spawns a little box to run JS in any page
 
 ### Bookmark this:
 
