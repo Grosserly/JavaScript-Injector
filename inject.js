@@ -12,7 +12,7 @@
 	// Construct modal
 	modal.innerHTML = '<div>\
 <button style="position:absolute;top:0;right:0;padding:2px 5px 2px">X</button>\
-<a href="https://github.com/Grosserly/js-inject/" style=font-size:20px>JavaScript Injector</a>\
+<a href="https://github.com/Grosserly/js-inject/" target="_blank" style=font-size:20px>JavaScript Injector</a>\
 <div></div>\
 <textarea rows=6 cols=60 autocomplete=off autocorrect=off autocapitalize=off spellcheck=false style="margin:15px 0 15px;font-family:monospace;white-space:pre;overflow-wrap:normal;overflow:scroll;resize:both"></textarea>\
 <div></div>\
