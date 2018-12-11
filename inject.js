@@ -17,7 +17,7 @@
 <textarea rows=6 cols=60 autocomplete=off autocorrect=off autocapitalize=off spellcheck=false style="margin:15px 0 15px;font-family:monospace;white-space:pre;overflow-wrap:normal;overflow:scroll;resize:both"></textarea>\
 <div></div>\
 <button>Inject</button>\
-<div id="jsi-output" style="font-family:monospace"></div>
+<div id="jsi-output" style="font-family:monospace"></div>\
 </div>';
 
     
