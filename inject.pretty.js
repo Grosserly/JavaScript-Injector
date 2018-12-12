@@ -8,7 +8,7 @@
 
 	var modal = document.createElement("div");
 	document.body.appendChild(modal);
-	modal.style = "position:absolute;top:40%;left:40%;padding:20px;border:0;box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);background-color:#F1F1F1"; // Add style to modal
+	modal.style = "position:absolute;top:40%;left:40%;padding:20px;border:0;box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);background-color:#F1F1F1;z-index:9999"; // Add style to modal
 
 	// Construct modal
 	modal.innerHTML = '<div>\
