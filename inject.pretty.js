@@ -36,9 +36,10 @@
 		
 	}, true);
 
+
+    // Window can be dragged by the header (the 2nd DIV)
     var m1,m2,m3,m4 = 0;
-    var dragBar = modal.getElementsByTagName("div")[1];
-    dragBar.onmousedown = dragMouseDown;
+    modal.getElementsByTagName("div")[1].onmousedown = dragMouseDown;
 
 
     function dragMouseDown(e) {
