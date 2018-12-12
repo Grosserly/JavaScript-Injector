@@ -44,6 +44,7 @@
 
     function dragMouseDown(e) {
         e = e || window.event;
+        e.preventDefault();
         m3 = e.clientX;
         m4 = e.clientY;
         document.onmouseup   = closeDragElement;
@@ -52,6 +53,7 @@
 
     function elementDrag(e) {
         e = e || window.event;
+        e.preventDefault();
         m1 = m3 - e.clientX;
         m2 = m4 - e.clientY;
         m3 = e.clientX;
